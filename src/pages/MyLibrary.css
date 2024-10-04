@@ -1,0 +1,24 @@
+.remove {
+        margin-top: 8px;
+        width: 100px;
+        height: 40px;
+        border-radius: 15px;
+        background-color: black;
+        border: none;
+        color: #ffffff;
+        font-size: 8px;
+        cursor: pointer;
+        align-self: center;
+        padding: 10px;
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+    }
+
+.library-button:hover {
+    background-color: #555555; /* Change background color on hover */
+}
+.navbar1 a {
+    text-decoration: none;
+}
+.navbar1 {
+    margin-top: 40px;
+}

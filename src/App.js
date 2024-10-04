@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Home from './pages/Home';
+import BookDetails from './pages/BookDetails';
+import MyLibrary from './pages/MyLibrary';
+import { BookProvider } from './context/BookContext'; // Ensure you import BookProvider
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BookProvider> 
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/book/:id' element={<BookDetails />} />
+          <Route path='/my-library' element={<MyLibrary />} />
+        </Routes>
+      </Router>
+    </BookProvider>
   );
-}
+};
 
 export default App;

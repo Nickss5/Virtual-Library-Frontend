@@ -1,0 +1,87 @@
+.book-card a {
+  text-decoration: none;
+  color: inherit; /* Ensures the text color stays the same as the parent */
+}
+
+
+@media (max-width: 600px) {
+    .book-card {
+        display: flex;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        padding: 19px;
+        border-radius: 8px;
+        margin: 10px;
+        width: 100px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        cursor: pointer;
+    }
+    .cover {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .book-name {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0px;
+        color: #333;
+        
+    }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+        .book-card {
+            width: 150px;
+            background-color: #f9f9f9;
+            padding: 19px;
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+        }
+        .cover {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .book-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0px;
+            color: #333;  
+        }
+        .book-author {
+            font-size: 18px;
+        }
+
+}
+
+@media (min-width: 900px) {
+        .book-card {
+            width: 200px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+        }
+        .cover {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .book-name {
+            font-size: 23px;
+            font-weight: bold;
+            margin: 0px;
+            color: #333;  
+        }
+        .book-author {
+            font-size: 20px;
+        }
+
+}
