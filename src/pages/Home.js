@@ -21,7 +21,7 @@ const Home = () => {
           <div className='nav-bar'>
             <img src = 'https://www.borrowbox.com/img/Logo.png' alt = 'background' className = "logo"/>
               <ul className='navigation'>
-                <li><Link to = "/" className = "nav">Books</Link></li>
+                <li><Link to = "/" className = "nav">Home</Link></li>
                 <li><Link to = "/my-library" className = "nav">My Library</Link></li>
               </ul>
             </div>

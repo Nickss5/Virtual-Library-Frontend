@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { BookContext } from '../context/BookContext';
 import {Link } from 'react-router-dom';
+import { FaLongArrowAltLeft } from "react-icons/fa";
 import './BookDetails.css'
 
 
@@ -30,7 +31,10 @@ const BookDetails = () => {
 
   return (
     <div className = 'details'>
-      <navbar className = "navbar"><Link to = "/">Home</Link></navbar>
+      <navbar className = "navbar"><Link to = "/">
+                <FaLongArrowAltLeft className='arrow'/>
+            </Link>
+        </navbar>
       <img src = {book.image} alt = "cover" className='cover-details'/>
       <div className='details-2'>
             <h1 className = "details-name">{book.title}</h1>
